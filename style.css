@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
+    color: #e0e0e0;
+}
+
+/* NAVBAR */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(20, 20, 40, 0.6);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    z-index: 1000;
+}
+
+/* SCROLL EFFECT */
+#navbar.scrolled {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    box-shadow: 0 8px 25px rgba(106, 17, 203, 0.6);
+}
+
+/* LOGO */
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #f0abfc;
+    letter-spacing: 2px;
+}
+
+/* MENU */
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 30px;
+}
+
+/* LINKS */
+.nav-menu a {
+    position: relative;
+    text-decoration: none;
+    color: #cbd5ff;
+    font-size: 16px;
+    padding: 6px 0;
+    transition: color 0.3s ease;
+}
+
+/* HOVER GLOW */
+.nav-menu a:hover {
+    color: #f472ff;
+}
+
+/* ANIMATED UNDERLINE */
+.nav-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #f472ff, #38bdf8);
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* CONTENT */
+.content {
+    margin-top: 120px;
+    padding: 40px;
+}
+
+.space {
+    height: 1500px;
+}
